@@ -1,0 +1,23 @@
+input.onButtonPressed(Button.A, function () {
+    for (let index = 0; index < 4; index++) {
+        maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CW, 15)
+        basic.pause(2000)
+        maqueen.servoRun(maqueen.Servos.S1, 90)
+        basic.pause(2000)
+        maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CW, 255)
+        maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CW, 15)
+        basic.pause(2000)
+        maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CW, 255)
+        maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CW, 15)
+        basic.pause(2000)
+        maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CW, 255)
+        maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CW, 15)
+        basic.pause(2000)
+        maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CW, 255)
+        maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CW, 15)
+        basic.pause(2000)
+        maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CW, 255)
+        maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CW, 15)
+        maqueen.motorStop(maqueen.Motors.All)
+    }
+})
